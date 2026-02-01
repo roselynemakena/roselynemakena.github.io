@@ -1,190 +1,350 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* banner Start */
-  #header .banner {
-    margin: 0px;
+/* ============================================
+   Responsive Styles - Tablet
+   ============================================ */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
   }
-  #header .banner h1 {
-    font-size: 30px;
+
+  section {
+    padding: 80px 0;
   }
-  #header .banner h2 {
-    font-size: 38px;
-    margin: 30px 0px 42px;
+
+  .section-title {
+    font-size: 36px;
   }
-  /* Works Section Start */
-  #works .grid-left {
-    margin: 32px 0;
+
+  /* Navigation */
+  .nav-links {
+    gap: 30px;
   }
-  #works .grid-left .large {
-    width: 458px;
+
+  /* Hero */
+  .name {
+    font-size: 56px;
   }
-  #works .grid-left .grid-box {
-    width: 229px;
+
+  .title {
+    font-size: 24px;
   }
-  #works .grid-right .grid-box.large {
-    width: 96%;
-    height: 338px;
+
+  .typewriter-cursor {
+    height: 50px;
+    transform: translateY(-3px);
   }
-  #works .grid-right .grid-box {
-    width: 48%;
-    height: 306px;
+
+  /* About */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
-  #works .grid-right .browse-box {
-    width: 48%;
-    height: 306px;
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
   }
-  #works .grid-right .browse-box .more {
-    width: 40%;
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  /* Testimonial Section Start */
-  #testimonial .commant {
-    margin: 0px;
-  }
-  #testimonial .commant .info {
-    padding: 25px 60px;
-  }
-  /* Clients Start */
-  #clients .item.large {
-    padding: 18px;
-  }
-  #clients .item.bg {
-    padding: 12px;
-  }
-  /* Skills Start */
-  .circliful {
-    margin-left: 50px;
-  }
-  /* Blog */
-  #blog .large {
-    right: 70px;
-  }
-  /* Footer Statt */
-  #footer p {
-    font-size: 15px;
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    bottom: 30px;
+    right: 30px;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+
+/* ============================================
+   Responsive Styles - Mobile
+   ============================================ */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
   .section-title {
-    font-size: 32px;
-  }
-  /* Menu Start */
-  #slider #menu {
-    top: 5%;
-    right: 10%;
-    width: 40px;
-    padding: 20px 22px;
-    height: 40px;
-  }
-  #slider #menu span {
-    width: 30px;
-  }
-  #slider .logo {
-    top: 15%;
-    left: 8%;
-  }
-  #navigation {
-    width: 180px;
-  }
-  #navigation .nav li {
-    margin: 8px 16px;
-  }
-  #navigation .nav li a {
-    font-size: 12px;
-  }
-  /* Banner  Start */
-  #header .banner {
-    margin: 0px;
-  }
-  #header .banner h1 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  #header .banner h2 {
     font-size: 30px;
-    line-height: 44px;
   }
-  #header .banner a {
-    margin: 30px 0;
+
+  .section-header {
+    margin-bottom: 40px;
   }
-  /* Works Start */
-  #works .grid-left {
+
+  /* Navigation */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+    z-index: 1001;
+    padding: 80px 40px;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
     width: 100%;
   }
-  #works .grid-left .large {
-    width: 328px;
-    float: none;
+
+  .nav-links a {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 500;
   }
-  #works .grid-left .grid-box {
-    width: 100%;
+
+  .nav-links a:hover {
+    background: rgba(6, 95, 70, 0.1);
   }
-  #works .grid-right {
-    width: 100%;
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1002;
   }
-  #works .grid-right .grid-box.large {
-    width: 100%;
-    height: auto;
+
+  .navbar .container {
+    height: 64px;
   }
-  #works .grid-right .grid-box {
-    width: 100%;
-    height: auto;
+
+  /* Hero */
+  .hero-content {
+    padding: 0 20px;
   }
-  #works .grid-right .browse-box {
-    width: 100%;
-  }
-  #works .grid-right .browse-box .more {
-    width: 40%;
-  }
-  /* Testimonial Section Start */
-  #testimonial .commant {
-    margin-left: -10px;
-  }
-  #testimonial .commant .claint {
-    margin-left: 0;
-  }
-  #testimonial .commant .quote {
-    position: absolute;
-    top: 88%;
-    left: 40%;
-  }
-  #testimonial .commant .info {
-    padding: 33px 0 0;
-  }
-  #testimonial .commant .info p {
-    font-size: 14px;
-    padding-top: 15px;
-  }
-  #testimonial .commant .info h4 {
-    font-size: 18px;
-  }
-  #testimonial .commant .info h5 {
+
+  .greeting {
     font-size: 16px;
   }
-  /* Clients Start */
-  .owl-carousel .owl-wrapper-outer {
-    margin: 65px;
+
+  .name {
+    font-size: 42px;
+    letter-spacing: -0.5px;
   }
-  /* Blog Start */
-  #blog .title {
-    font-size: 12px;
-    padding: 0;
+
+  .typewriter-cursor {
+    height: 38px;
+    width: 3px;
+    transform: translateY(-2px);
   }
-  #blog .blog-item .content {
-    width: 170px;
-    padding: 5px;
-    height: 164px;
+
+  .title {
+    font-size: 20px;
   }
-  #blog .blog-item .content p {
-    padding-top: 5px;
-    font-size: 12px;
+
+  .title::after {
+    width: 50px;
+    height: 2px;
   }
-  /* Feedback Start */
-  #feedback .btn-green {
-    width: 294px;
+
+  .tagline {
+    font-size: 16px;
   }
-  #feedback .address {
-    margin-top: 50px;
+
+  .hero-buttons {
+    flex-direction: column;
   }
-  /* Footer Start */
-  .scroll-top {
-    padding-bottom: 12px;
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .scroll-indicator a {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  /* About */
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-item {
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .stat-number {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .stat-label {
+    font-size: 15px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 28px;
+  }
+
+  /* Experience */
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    padding-left: 30px;
+    padding-bottom: 32px;
+  }
+
+  .timeline-dot {
+    left: -5px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    padding: 24px;
+  }
+
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+
+  /* Contact */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-link {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .back-to-top a {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+/* ============================================
+   Responsive Styles - Small Mobile
+   ============================================ */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .typewriter-cursor {
+    height: 32px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .greeting {
+    font-size: 14px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .stat-item {
+    padding: 20px 16px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .skill-card {
+    padding: 24px;
+  }
+
+  .skill-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .skill-icon i {
+    font-size: 24px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .contact-links {
+    gap: 12px;
+  }
+
+  .contact-link {
+    padding: 14px 20px;
+  }
+}
+
+/* ============================================
+   Landscape Mode
+   ============================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+  #hero {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .scroll-indicator {
+    display: none;
   }
 }
